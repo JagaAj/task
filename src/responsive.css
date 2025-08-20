@@ -1,0 +1,42 @@
+/*****************menu bar*TABLET**********************/
+@media only screen and (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 9rem;
+    z-index: 1;
+  }
+
+  .navigation {
+    position: absolute;
+    background-color: #fafafa;
+    top: 90px;
+    right: -304px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 4.8rem 6.8rem;
+    height: 100vh;
+    z-index: 2;
+    transition: right 0.3s ease;
+  }
+  .navigation.active {
+    right: 0px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .nav-list {
+    padding-bottom: 1.8rem;
+    top: 120px;
+  }
+}
